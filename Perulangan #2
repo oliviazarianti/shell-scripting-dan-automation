@@ -1,0 +1,13 @@
+C. Perulangan
+
+For Loop: Mengulang berdasarkan rentang angka (misal: {1..5}).
+for angka in {1..5}; do
+echo "Angka saat ini: $angka"
+done
+
+While Loop: Mengulang selama kondisi masih true (misal: selama angka ≤ 5).
+angka=1
+while [ $angka -le 5 ]; do
+echo "Angka saat ini: $angka"
+angka=$((angka + 1))
+done
