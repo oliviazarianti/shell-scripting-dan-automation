@@ -1,0 +1,19 @@
+B. Kondisi
+
+If - Else: Menjalankan perintah jika kondisi terpenuhi (then) atau tidak (else).
+angka=10
+if [ $angka -gt 5 ]; then
+echo "Angka lebih besar dari 5"
+else
+echo "Angka kurang dari atau sama dengan 5"
+fi
+
+If - Elif - Else: Percabangan untuk banyak kondisi (penentuan grade A, B, atau C).
+nilai=80
+if [ $nilai -ge 90 ]; then
+echo "Grade: A"
+elif [ $nilai -ge 75 ]; then
+echo "Grade: B"
+else
+echo "Grade: C"
+fi
