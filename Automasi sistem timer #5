@@ -1,0 +1,7 @@
+E. Automasi dengan Systemd Timers
+Metode lebih modern untuk menjalankan layanan terjadwal.
+
+Buat Service File: sudo nano /etc/systemd/system/nama_tugas.service
+Buat Timer File: sudo nano /etc/systemd/system/nama_tugas.timer
+Aktifkan Timer: sudo systemctl enable --now nama_tugas.timer
+Periksa status: systemctl status nama_tugas.timer
