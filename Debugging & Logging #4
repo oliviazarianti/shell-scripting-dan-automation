@@ -1,0 +1,10 @@
+F. Debugging & Logging
+
+Journalctl (Log Sistem):
+Lihat semua log: journalctl
+Log 30 menit terakhir: journalctl --since "30 minutes ago"
+Log layanan tertentu (contoh cron): journalctl -u cron
+Memantau log secara real-time.: journalctl -f
+Dmesg (Log Kernel):
+Menampilkan pesan kernel: dmesg
+Log kernel terperinci: sudo journalctl -k
