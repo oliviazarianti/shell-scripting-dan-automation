@@ -1,0 +1,19 @@
+D. Automasi dengan Cron Job
+Cron digunakan untuk menjadwalkan tugas otomatis.
+
+Buat skrip (contoh: log_time.sh)
+nano ~/log_time.sh
+
+Tambahkan perintah yang diinginkan, simpan (Ctrl+O, Enter, Ctrl+X)
+
+Beri izin eksekusi
+chmod +x ~/log_time.sh
+
+Tambahkan ke Cron
+crontab -e
+
+Tambahkan baris ini untuk berjalan setiap menit:
+
+~/log_time.sh
+Cek status cron
+sudo systemctl status cron
